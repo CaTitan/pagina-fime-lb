@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body {
+	background: rgb(197, 214, 250);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+header {
+	background-color:#1c1a80;
+}
+
+header .categorias {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header nav{
+  width: 100%;
+
+}
+
+header nav ul{
+  overflow:hidden;
+  list-style: none;
+}
+
+header nav ul li{
+  float:left;
+}
+
+header nav ul li a{
+
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px;
+  color: #fff;
+}
+
+header nav ul li a:hover{
+  background-color:#fff;
+  color:#07020D;
+}
+
+/* ------------------------- */
+/* Conclusiones */
+/* ------------------------- */
+
+.grey {
+	background: rgb(73, 73, 73);
+	color: white;
+	width: 100%;
+}
+
+.white {
+	background: white;
+	color: rgb(73, 73, 73);
+	width: 100%;
+}
