@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos3.css">
+    <title>Practica 3</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="">Equipo</a></li>
+        </ul>
+    </nav>
+    </header><br>
+    <div class="contenedor">
+        
+        <nav>
+            <h1 style="text-align: center;">CSS</h1><br>
+            
+        </nav>
+        <section>
+            <article>
+                <h3>El papel del archivo de reset CSS</h3><br>
+                <p>Todos los elementos HTML se muestran en pantalla utilizando los estilos por defecto que aplica cada
+                    navegador. CSS nos permite definir estilos para tipos de letra, modificando el tamaño y la fuente,
+                    pero hay otros estilos no tan obvios. El estilo por defecto para un elemento heading 1 (&lt;1>) incluye
+                    unos márgenes de 10 pixels por encima y por debajo del texto. Si queremos modificar el estilo de h1
+                    para que no lleve márgenes, tendremos que indicar de manera explícita unas reglas que conviertan
+                    dichos valores a cero.</p>
+                    <p>Todos los elementos HTML incluyen márgenes por defecto. Aunque la calidad cambio, conviene saber
+                        que cada motores de restitución aplica sus propias reglas para mostrar los elementos en pantalla.
+                        En teoría esto quiere decir que el margen por defecto de 10 pixeles en un navegador X puede
+                        transformarse en 15 pixels en el navegador.</p>
+                    <p>Una técnica para homogeneizar las presentaciones en pantalla consiste en utilizar un archivo CSS
+                        de reset que elimine los estilos por defecto a los elementos HTML utilizados. Con este reseteo
+                        podemos conseguir una base fiable y coherente</p>
+                    <br><br><hr><br><br>
+                    <h3>Ampliación de la hoja de estilos de reset</h3><br>
+                    <p> EL uso de hojas de reset CSS puede tener desventajas: deben recordar que están utilizando dicha hoja
+                    de estilos y deben tener en cuenta cómo afectará a los distintos elementos del sitio web. Si se
+                    aplica la hoja de reset a todo el sitio, algunos de sus efectos pueden resultar sorprendentes.
+                    Debido a que un archivo CSS de reset elimina los márgenes externos e internos de la mayoría de los
+                    elementos de los formularios, y cuando utilizan por primera vez con campos de formulario, muchos se
+                    preguntan por qué los botones, campos de texto y otros elementos aparecen de esa forma.</p>
+                    <br><br><hr><br><br>
+                    <h3>Breve historia de las técnicas de presentación en pantalla para la Web</h3><br>
+                    <p>Cuando se empezó con el diseño web a mediados de los 90, el único método que se podía emplear
+                        para crear estructuras visuales complejas, consistía en emplear el elemento tabla (&lt;table>).
+                        La tabla HTML estaba pensada inicialmente para mostrar datos de manera estructurada, en
+                        filas, columnas y celdas. Sin embargo los diseñadores empezaron a utilizar este elemento como
+                        base para las estructuras visuales de las páginas. En aquel momento esa técnica estaba plenamente
+                        justificada: las tablas era lo único que tenían para generar el tipo de diseños que se necesitaban
+                        y, además, eran un recurso extremadamente flexible.</p>
+                    <p>A partir de aquí, empezaron a utilizarse técnicas como el anidamiento de tablas, es decir,
+                        crear tablas dentro de celdas de otras tablas de mayor tamaño. 
+                       <br> CSS ha sustituido ya el empleo de tablas para organizar las páginas, por lo que los elementos
+                       de tabla de HTML van regresando, poco a poco, a su función original, que es la de mostrar datos
+                       estructurados, y abandonan su papel como armazón visual de las páginas. </p>
+                       <br><br><hr><br><br>
+                    <h3>Introducción a las distintas opciones de presentación de páginas</h3><br>
+                        <p>Antes de la estructura visual de las páginas web tenemos que decidir que anchura va a tener.
+                            Hay dos categorías principales de estructuras en base a su anchura:
+                           <br> <p class="italic">Anchura fija </p> Todos los elementos de la página se anidan dentro de un contenedor que
+                           tiene un ancho. La anchura fija es una solución cómoda, ya que, permite ubicar con precisión
+                           los distintos elementos. Además aporta un esqueleto robusto para otros elementos, como la
+                           anchura de párrafo o el posicionamiento de imágenes cuando éstas aparecen en gran número.
+                           <br> <p class="italic">Anchura variable </p>Están pensadas para adaptarse a la anchura de la ventana del navegador
+                           en cualquier momento. Es útil cuando los usuarios acceden desde pantallas con resoluciones
+                           muy variadas, lo que hace imposible el elegir un ancho fijo que ofrezca el mismo aspecto en
+                           todas ellas.  Una estructura flexible bien diseñada es capaz de ajustarse automáticamente al
+                           tamaño de ventana del navegador.
+                           <br><br> Estas estructuras son adecuadas para la web porque permiten el reposicionamiento en pantalla de textos e
+                           imágenes. Esto permite que sean la mejor opción en la actualidad debido a que su movilidad permite que sean
+                           visibles en teléfonos móviles.</p>
+                           <br><br><hr><br><br>
+                           <h3>El elemento &lt;div>: creación de una estructura CSS de dos columnas con anchura fija</h3><br>
+                           <p>Podemos considerar al elemento  &lt;div> como un contenedor genérico en el que podemos poner elementos
+                               relacionados entre sí de forma lógica. La apertura y cierre de etiquetas  &lt;div> suele hacerse rodeando a
+                                otros elementos de la página, de forma que dichos elementos quedan anidados dentro del contenedor.
+                                Puedes tener en la misma página todos los elementos &lt;div> que consideres necesarios y con frecuencia
+                                se utilizan para crear el armazón visual. Un elemento &lt;div> suele llevar un atributo ID
+                                (con lo que adquiere un “nombre” explícito dentro de la página) o bien pertenecer a una clase
+                                CSS, utilizándose ambos como medio para aplicar al contenedor uno o más estilos CSS. El empleo de
+                                elementos <div> facilita a otros la identificación de las diversas secciones en que se subdivide la
+                                página y también ayuda a controlar y aplicar estilos en cada una de ellas.</p>
+                                <br><br><hr><br><br>
+                                <h3>La propiedad float CSS</h3><br>
+                                <p>La propiedad float en CSS hace posible que un texto pueda escribirse alrededor de una
+                                    imagen. Este estilo ha sido tomado del diseño de imprenta, donde a este efecto se le
+                                    llama “justificación” del texto. CSS consigue el mismo efecto haciendo que los
+                                    elementos que siguen a un elemento “flotante” puedan rodearlo, cambiando su posición
+                                    relativa con respecto a él. 
+                                   <br> El valor float se puede también declarar como “left”. Los únicos valores posibles
+                                   para float son “left”, “right” y “none”. No se puede centrar un objeto utilizando esta
+                                   propiedad.
+                                   <br> Si queremos tener múltiples elementos flotantes dentro del mismo contenedor, el
+                                   resultado es que se alinean entre sí. Este comportamiento se suele utilizar en ciertas
+                                   funciones habituales de las páginas web.</p>
+                                   <img src="img/float.png" alt="" style="float: right;">
+                                    <br><br><hr><br><br>
+                                    <h3>La propiedad clear</h3><br>
+                                    <p>Cuando añadimos la propiedad CSS clear a un objeto, le estamos indicando una regla que dice
+                                        “no admito elementos flotantes a mi lado”. Podemos especificar si queremos que no haya elementos
+                                        flotantes a la izquierda, a la derecha o en ambos lados. En el caso del pie de página, queremos
+                                        eliminarlos de ambos lados.</p>
+                                        <br><br><hr><br><br>
+                                    <h3>Creación de un menú de navegación basado en listas con “float”</h3><br>
+                                    <p>Los elementos de la lista dentro de este menú tendrán que ser flotantes para modificar la presentación
+                                        vertical por defecto de las listas. Los menús de navegación CSS se utilizan mucho en el diseño basado
+                                        en estándares porque se pueden actualizar y modificar de manera muy sencilla, y porque se basan en
+                                        textos, lo que mejora la accesibilidad en dispositivos como los lectores de pantalla, e incluso
+                                        ayudan a mejorar el posicionamiento de nuestras páginas en los buscadores. </p>
+                                        <br><br><hr><br><br>
+                                    <h3>Añadir estilos para el texto</h3><br>
+                                    <p>Cuando se esta diseñando la estructura de las páginas, el empleo de hojas de estilo internas es una
+                                        cuestión de comodidad: resulta más sencillo para crear y modificar reglas si las tenemos dentro de la
+                                        página y podemos llegar a ellas desplazando la ventana que si las tenemos en un archivo externo.</p>
+                                        <br><br><hr><br><br>
+            </article>
+        </section>
+        
+    </div>
+        <div class="oculto" id="abraham">
+            <div class="cerrar">
+                <a href="javascript:cerrar1()"><img src="img/error.png" alt=""></a>
+            </div>
+            <p>Abraham Said Herrera Moreno <br><br>
+            CSS nos permite una personalizacion y una capacidad para mostrar elemnetos que contribuye a que cada creador
+            de contenido web obtenga su propia identidad, permitiendo que cualquier pagina sea formal o extravagante, moderna
+            o atemporal, y sus posibilidades estan limitadas solo por la imaginacion e ingenio del ser humano.</p>
+        </div>
+        <div class="oculto" id="alejandra">
+        <div class="cerrar">
+            <a href="javascript:cerrar2()"><img src="img/error.png" alt=""></a>
+        </div>
+            <p>Alejandra Pacheco Lucio <br><br> 
+                En conclusión es bien sabido que las páginas web cuentan con un formato específico de diseño,
+                en este caso el uso del CSS permite dar una mejor presentación a la pagina debido a que permite
+                efectuar mas cambios al diseño y estilo de letras que se usa, además de que permite ordenar de
+                diferente forma el texto y las imágenes haciendo que sea mas sencillo el desarrollar una pagina
+                y aplicar de forma mas fácil el ajuste que la pagina tiene en varios medios electrónicos haciendo
+                que sea mas cómodo acezar desde diferentes aparatos.</p>
+        </div>
+        <div class="oculto" id="manuel">
+            <div class="cerrar">
+                <a href="javascript:cerrar3()"><img src="img/error.png" alt=""></a>
+            </div>
+                <p>Por conclusion podemos obtener que CSS es la tecnología creada con el fin de separar la estructura
+                    de la presentación con el fin de crear una mejor percepcion visual, y mejorar la usabilidad y
+                    experiencia de usuario de un sitio web, permitiendo la optimizacion del desarrollo web responsive y
+                    disminuyendo el procesamiento y el tiempo de carga, factores que pueden marcar enormemente la
+                    diferencia en el entendimiento visual  de los usuarios.</p>
+        </div>
+        <div class="oculto" id="jesus">
+            <div class="cerrar">
+                <a href="javascript:cerrar4()"><img src="img/error.png" alt=""></a>
+            </div>
+            <p>asd</p>
+        </div>
+    <footer>
+        <h2>Conclusiones</h2>
+    <ul class="conclusiones">
+        <li><a href="javascript:abrir1()">Abraham</a></li>
+        <li><a href="javascript:abrir2()">Alejandra</a></li>
+        <li><a href="javascript:abrir3()">Manuel</a>
+        <li><a href="javascript:abrir4()">Jesus</a></li>
+    </footer>
+    <script>
+        function abrir1(){document.getElementById("abraham").style.display="block";}
+        function abrir2(){document.getElementById("alejandra").style.display="block";}
+        function abrir3(){document.getElementById("manuel").style.display="block";}
+        function abrir4(){document.getElementById("jesus").style.display="block";}
+
+        function cerrar1(){document.getElementById("abraham").style.display="none";}
+        function cerrar2(){document.getElementById("alejandra").style.display="none";}
+        function cerrar3(){document.getElementById("manuel").style.display="none";}
+        function cerrar4(){document.getElementById("jesus").style.display="none";}
+    </script>
+</body>
+</html>
